@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vercel/
+footage/
+.impeccable/hook.cache.json
+

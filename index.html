@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>458 Spider — A Private Viewing</title>
+  <meta name="description" content="A scroll-driven walk from a quiet room into a lit garage and around the Ferrari 458 Spider. Fan-made concept." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="loader" role="status" aria-live="polite">
+    <p class="loader__label">Preparing the room</p>
+    <p class="loader__count"><span id="load-count">0</span></p>
+    <div class="loader__bar"><span id="load-bar"></span></div>
+  </div>
+
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav">
+    <a class="nav__logo" href="#intro" data-goto="intro">Ferrari</a>
+    <nav aria-label="Chapters">
+      <ul class="nav__list">
+        <li><a href="#intro" data-goto="intro" data-group="intro">Intro</a></li>
+        <li><a href="#design" data-goto="model" data-group="design">Design</a></li>
+        <li><a href="#engine" data-goto="engine" data-group="engine">Engine</a></li>
+        <li><a href="#numbers" data-goto="numbers" data-group="numbers">Numbers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <p class="serial" aria-hidden="true">458 Spider / Progetto F142</p>
+  <p class="counter" aria-hidden="true"><span id="chapter">01</span> / 09</p>
+
+  <main class="overlay">
+    <section class="panel panel--hero" data-panel="hero" id="intro">
+      <div class="hero__lockup">
+        <p class="hero__tagline">Built in Maranello. Kept in the dark.</p>
+        <h1 class="hero__mark" data-split>Ferrari</h1>
+      </div>
+      <div class="hero__card">
+        <p class="hero__card-title">A private viewing of the 458 Spider</p>
+        <hr class="dash" />
+        <p class="hero__card-body">Scroll to open the door. The car is waiting under the lights.</p>
+      </div>
+      <p class="hero__cue"><span>Scroll to enter</span></p>
+    </section>
+
+    <section class="panel panel--split" data-panel="door">
+      <h2 class="heading" data-split>The room before the room.</h2>
+      <p class="body">One car, one room, and the lights stay off until you arrive.</p>
+    </section>
+
+    <section class="panel panel--split panel--model" data-panel="model" id="design">
+      <h2 class="display" data-split>458 Spider</h2>
+      <p class="body">Built from 2011 to 2015. A naturally aspirated 4.5-litre V8 behind the seats, and an aluminium roof that folds away in 14&nbsp;seconds.</p>
+    </section>
+
+    <section class="panel panel--split" data-panel="air">
+      <h2 class="heading" data-split>Shaped by air.</h2>
+      <p class="body">Small winglets inside the front intakes flex at speed, lowering drag without a single motor.</p>
+    </section>
+
+    <section class="panel panel--split" data-panel="brakes">
+      <h2 class="heading" data-split>Stops as hard as it goes.</h2>
+      <p class="body">Carbon-ceramic brakes come standard. They shrug off the heat that would fade steel discs.</p>
+    </section>
+
+    <section class="panel panel--split" data-panel="profile">
+      <h2 class="heading" data-split>One line, nose to tail.</h2>
+      <p class="body">Pininfarina drew it. Under the paint, an aluminium spaceframe keeps the dry weight to 1,430&nbsp;kg.</p>
+    </section>
+
+    <section class="panel panel--split" data-panel="engine" id="engine">
+      <h2 class="display" data-split>9,000 rpm.</h2>
+      <p class="body">The F136 V8 makes 570&nbsp;cv at nine thousand revs, and breathes out through three tailpipes grouped in the centre of the diffuser.</p>
+    </section>
+
+    <section class="panel panel--numbers" data-panel="numbers" id="numbers">
+      <h2 class="visually-hidden">The numbers</h2>
+      <dl class="specs specs--top">
+        <div><dt>Max power at 9,000 rpm</dt><dd>570 cv</dd></div>
+        <div><dt>Max torque at 6,000 rpm</dt><dd>540 Nm</dd></div>
+        <div><dt>0 to 100 km/h</dt><dd>&lt;3.4 s</dd></div>
+      </dl>
+      <dl class="specs specs--bottom">
+        <div><dt>Top speed</dt><dd>320 km/h</dd></div>
+        <div><dt>Dual-clutch gearbox</dt><dd>7 speeds</dd></div>
+        <div><dt>Dry weight</dt><dd>1,430 kg</dd></div>
+      </dl>
+    </section>
+
+    <section class="panel panel--split panel--end" data-panel="end">
+      <h2 class="heading" data-split>The room is yours.</h2>
+      <div class="end__side">
+        <p class="body">The lights stay on as long as you do. Scroll back to walk it again.</p>
+        <a class="pill" href="#intro" data-goto="intro">Walk it again</a>
+        <p class="credits">
+          Fan-made concept. Not affiliated with or endorsed by Ferrari S.p.A.<br />
+          Stills and footage generated with Higgsfield.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="track" aria-hidden="true"></div>
+
+  <noscript><p class="noscript">This walkthrough needs JavaScript.</p></noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

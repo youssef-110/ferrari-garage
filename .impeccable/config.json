@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-11T20:07:02.537Z",
+        "reason": "style brief (ORYZO reference supplied by user) specifies uppercase Arial micro-legal credit lines"
+      },
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-10-11T20:07:03.775Z",
+        "reason": "style brief (ORYZO reference supplied by user) specifies Arial only for the micro-legal credit lines; display/body face is Host Grotesk"
+      }
+    ]
+  }
+}
